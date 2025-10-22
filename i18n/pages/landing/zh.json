@@ -1,0 +1,466 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "DeepSeek OCR",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "DeepSeek OCR"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "功能特点",
+          "url": "/#feature",
+          "icon": "RiSparkling2Line"
+        },
+        {
+          "title": "定价",
+          "url": "/pricing",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "案例展示",
+          "url": "/showcase",
+          "icon": "RiApps2Line"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "获取 DeepSeek OCR",
+        "url": "https://shipany.ai",
+        "target": "_blank",
+        "variant": "link",
+        "icon": "RiArrowRightUpLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "10倍压缩文档,97%准确率 - DeepSeek OCR 视觉革命",
+    "highlight_text": "10倍压缩",
+    "description": "DeepSeek OCR 将1000字文档压缩为100个视觉token,准确率高达97%。<br/>突破LLM上下文限制,降低API成本,处理速度提升10倍。",
+    "announcement": {
+      "label": "开源",
+      "title": "🚀 2025年10月最新发布",
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR"
+    },
+    "tip": "⚡ GitHub 2000+ Stars | Hugging Face 官方模型",
+    "buttons": [
+      {
+        "title": "立即使用",
+        "icon": "RiFlashlightFill",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "default"
+      },
+      {
+        "title": "查看文档",
+        "icon": "RiBookLine",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "📄 技术报告",
+        "icon": "RiFileTextLine",
+        "url": "/DeepSeek_OCR_paper.pdf",
+        "variant": "outline",
+        "isPdfPreview": true
+      }
+    ],
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "什么是 DeepSeek OCR",
+    "label": "介绍",
+    "description": "DeepSeek OCR 是一个突破性的视觉文本压缩模型，将文档转换为高度压缩的视觉token，实现7-20倍压缩比。",
+    "image": {
+      "src": "/imgs/features/show1.jpg"
+    },
+    "items": [
+      {
+        "title": "视觉压缩技术",
+        "description": "将1000字文档压缩为100个视觉token，准确率高达97%，突破LLM上下文限制。",
+        "icon": "RiCompasses2Line"
+      },
+      {
+        "title": "双阶段编码器",
+        "description": "SAM捕捉局部细节 + CLIP理解整体布局，16倍卷积压缩，完美平衡精度与效率。",
+        "icon": "RiCpuLine"
+      },
+      {
+        "title": "灵活分辨率",
+        "description": "4种模式(64-400 tokens)适配不同场景，从快速预览到详细提取。",
+        "icon": "RiZoomInLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "为什么选择 DeepSeek OCR",
+    "label": "优势",
+    "description": "与传统OCR和竞品相比，DeepSeek OCR 在效率、准确率和成本上具有显著优势。",
+    "items": [
+      {
+        "title": "60倍 Token 效率",
+        "description": "相比 GOT-OCR 2.0 减少60倍token消耗，每页仅需100 tokens，大幅降低API成本和处理时间。",
+        "icon": "RiRocketLine",
+        "image": {
+          "src": "/imgs/features/show2.jpg"
+        }
+      },
+      {
+        "title": "97% 高准确率",
+        "description": "复杂文档准确率达97%，显著超越Tesseract的85%，支持数学公式、表格、多语言混合文本。",
+        "icon": "RiCheckDoubleLine",
+        "image": {
+          "src": "/imgs/features/show3.jpg"
+        }
+      },
+      {
+        "title": "超强处理能力",
+        "description": "单A100每天处理20万页，20服务器集群达3300万页/天，开源免费，易于部署和定制。",
+        "icon": "RiServerLine",
+        "image": {
+          "src": "/imgs/features/show4.jpg"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "如何快速开始使用 DeepSeek OCR",
+    "description": "通过四个简单步骤开始使用 DeepSeek OCR：",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "环境准备",
+        "description": "安装 Python 3.12、CUDA 11.8、PyTorch 2.6.0。最低8GB显存(RTX 3070)，推荐16GB+(RTX 4090)。",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "安装模型",
+        "description": "从 GitHub 克隆仓库，或从 Hugging Face 下载模型(6.67GB)。安装依赖包和 Flash Attention。",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "处理文档",
+        "description": "选择分辨率模式(Tiny/Small/Base/Large)，输入文档图像，获得压缩的视觉token输出。",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "集成应用",
+        "description": "将视觉token传递给LLM进行二次处理，构建文档问答、内容提取、知识库等应用。",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "DeepSeek OCR 核心功能",
+    "description": "专为高效文档处理和 AI 集成设计的强大功能。",
+    "items": [
+      {
+        "title": "视觉Token压缩",
+        "description": "独创的视觉压缩技术，将文档转换为高密度视觉token，压缩比达7-20倍。",
+        "icon": "RiCompressLine"
+      },
+      {
+        "title": "多模态识别",
+        "description": "支持文本、数学公式(LaTeX)、表格、图表、化学方程式等多种内容类型。",
+        "icon": "RiLayoutGridLine"
+      },
+      {
+        "title": "多语言支持",
+        "description": "支持约100种语言，包括中英日韩混合文本，无需手动切换语言。",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "灵活分辨率",
+        "description": "提供4种分辨率模式(64-400 tokens)，从快速预览到精细提取自由切换。",
+        "icon": "RiAspectRatioLine"
+      },
+      {
+        "title": "开源免费",
+        "description": "完全开源，可商用，提供 GitHub 仓库和 Hugging Face 模型下载。",
+        "icon": "RiGithubLine"
+      },
+      {
+        "title": "高性能处理",
+        "description": "单A100 GPU每天处理20万页，20服务器集群达3300万页/天的超强性能。",
+        "icon": "RiSpeedLine"
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "统计",
+    "title": "DeepSeek OCR 性能数据",
+    "description": "真实的性能表现，经过验证的技术指标。",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "压缩比",
+        "label": "7-20x",
+        "description": "Token 减少"
+      },
+      {
+        "title": "准确率",
+        "label": "97%",
+        "description": "识别精度"
+      },
+      {
+        "title": "处理速度",
+        "label": "20万",
+        "description": "页/天/A100"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "用户评价",
+    "title": "用户如何评价 DeepSeek OCR",
+    "description": "听听使用 DeepSeek OCR 的研究人员和开发者怎么说。",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "李教授",
+        "label": "某大学 AI 实验室主任",
+        "description": "DeepSeek OCR 让我们的论文处理效率提升了10倍!处理100页博士论文只需2分钟,公式识别准确率达95%,对学术研究帮助巨大。",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "张工程师",
+        "label": "某科技公司 NLP 研发负责人",
+        "description": "token压缩技术太强了!原本处理长文档要消耗几千token,现在只需100个,API成本降低了90%,LLM上下文也不会爆了。",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "王开发者",
+        "label": "独立开发者",
+        "description": "开源免费,部署简单,文档齐全。我用它构建了一个文档问答系统,支持中英混合文档,识别准确率非常高,强烈推荐!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "刘总监",
+        "label": "某金融公司技术总监",
+        "description": "我们用DeepSeek OCR处理财务报表和合同,多语言支持很棒,表格识别精准,比之前用的PaddleOCR效果好很多。",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "陈研究员",
+        "label": "AI 研究机构研究员",
+        "description": "双阶段编码器架构设计很巧妙,SAM+CLIP的组合完美平衡了局部细节和全局理解,16倍压缩率令人印象深刻。",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "赵创业者",
+        "label": "AI 文档处理创业公司 CEO",
+        "description": "用DeepSeek OCR构建训练数据生成系统,单A100每天20万页的处理能力太强了,而且完全开源,节省了大量成本。",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "关于 DeepSeek OCR 的常见问题",
+    "description": "还有其他问题?访问 GitHub Issues 或 Hugging Face Discussions。",
+    "items": [
+      {
+        "title": "DeepSeek OCR 与传统 OCR 有什么区别?",
+        "description": "DeepSeek OCR 是一个视觉文本压缩模型,将文档转换为高度压缩的视觉token而非传统文本。这使得它能实现7-20倍的压缩比,特别适合需要传递给LLM进行二次处理的场景,可以大幅降低token消耗和API成本。"
+      },
+      {
+        "title": "使用 DeepSeek OCR 需要什么硬件配置?",
+        "description": "最低配置需要8GB显存的NVIDIA GPU(如RTX 3070或RTX 4060 Ti),可以实现约5-10页/分钟的处理速度。推荐配置是16GB+显存(如RTX 4090或A100-40G),可以达到100-200页/分钟的生产级性能。还需要CUDA 11.8和约10-15GB硬盘空间。"
+      },
+      {
+        "title": "DeepSeek OCR 支持哪些文档类型和语言?",
+        "description": "DeepSeek OCR 支持约100种语言,包括中英日韩等多语言混合文本。可以处理的内容类型包括:纯文本、数学公式(LaTeX)、表格、图表、化学方程式、几何图形等。特别适合处理学术论文、技术文档、多语言商务合同等复杂文档。"
+      },
+      {
+        "title": "安装过程中遇到问题怎么办?",
+        "description": "常见问题包括:1) Tokenizer兼容性-为vLLM创建独立环境;2) CUDA检测失败-确保PyTorch版本匹配CUDA 11.8;3) Flash Attention编译失败-使用--no-build-isolation参数;4) PDF输入-需先转换为图像。详细解决方案请查看GitHub Issues或重新构建环境。"
+      },
+      {
+        "title": "DeepSeek OCR 的准确率如何?",
+        "description": "在10:1压缩比下,DeepSeek OCR 的准确率可达97%(Fox基准测试)。对于复杂文档,准确率约为97%,显著优于Tesseract的85%。数学公式识别准确率约95%。即使在20倍压缩比下,仍能保持有用的识别效果。"
+      },
+      {
+        "title": "可以商业使用吗?开源协议是什么?",
+        "description": "是的,DeepSeek OCR 完全开源且可商业使用。模型托管在GitHub和Hugging Face上,提供完整的代码和模型权重下载。您可以自由部署、修改和集成到您的商业项目中,无需额外授权费用。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "立即开始使用 DeepSeek OCR",
+    "description": "从这里开始,体验10倍文档压缩和97%准确率。",
+    "buttons": [
+      {
+        "title": "GitHub 仓库",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "icon": "RiGithubLine"
+      },
+      {
+        "title": "Hugging Face 模型",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "DeepSeek OCR",
+      "description": "DeepSeek OCR 是一个突破性的视觉文本压缩模型,实现7-20倍压缩比和97%准确率,完全开源免费。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "DeepSeek OCR"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • DeepSeek AI 开源项目",
+    "nav": {
+      "items": [
+        {
+          "title": "关于",
+          "children": [
+            {
+              "title": "核心功能",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "使用场景",
+              "url": "/#usage",
+              "target": "_self"
+            },
+            {
+              "title": "常见问题",
+              "url": "/#faq",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "资源",
+          "children": [
+            {
+              "title": "GitHub 仓库",
+              "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+              "target": "_blank"
+            },
+            {
+              "title": "Hugging Face",
+              "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+              "target": "_blank"
+            },
+            {
+              "title": "技术论文",
+              "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "相关链接",
+          "children": [
+            {
+              "title": "DeepSeek AI",
+              "url": "https://www.deepseek.com",
+              "target": "_blank"
+            },
+            {
+              "title": "Reddit 讨论",
+              "url": "https://www.reddit.com/r/LocalLLaMA/",
+              "target": "_blank"
+            },
+            {
+              "title": "技术博客",
+              "url": "https://github.com/deepseek-ai",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/deepseek_ai",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/deepseek-ai",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/Tc7c45Zzu5",
+          "target": "_blank"
+        },
+        {
+          "title": "邮箱",
+          "icon": "RiMailLine",
+          "url": "mailto:service@deepseek.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}
