@@ -29,16 +29,7 @@
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "Get DeepSeek OCR",
-        "url": "https://deepseekocr.site",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
-    ],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
@@ -124,7 +115,7 @@
     "label": "Introduce",
     "description": "DeepSeek OCR is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
     "image": {
-      "src": "/imgs/features/1.png"
+      "src": "/imgs/features/show1.jpg"
     },
     "items": [
       {
@@ -155,7 +146,7 @@
         "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
         "icon": "RiNextjsFill",
         "image": {
-          "src": "/imgs/features/2.png"
+          "src": "/imgs/features/show2.jpg"
         }
       },
       {
@@ -163,7 +154,7 @@
         "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
         "icon": "RiClapperboardAiLine",
         "image": {
-          "src": "/imgs/features/3.png"
+          "src": "/imgs/features/show3.jpg"
         }
       },
       {
@@ -171,7 +162,7 @@
         "description": "Get dedicated support and join our developer community to ensure your successful launch.",
         "icon": "RiCodeFill",
         "image": {
-          "src": "/imgs/features/4.png"
+          "src": "/imgs/features/show4.jpg"
         }
       }
     ]
@@ -226,7 +217,7 @@
     },
     "buttons": [
       {
-        "title": "Try Now",
+        "title": "Free Try Now",
         "icon": "RiPlayCircleLine",
         "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
         "variant": "default",

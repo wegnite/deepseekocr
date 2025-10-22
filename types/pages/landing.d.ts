@@ -19,6 +19,7 @@ export interface LandingPage {
   faq?: Section;
   cta?: Section;
   footer?: Footer;
+  experience?:any;
 }
 
 export interface PricingPage {

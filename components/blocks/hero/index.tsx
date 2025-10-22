@@ -161,8 +161,8 @@ export default function Hero({ hero }: { hero: HeroType }) {
         open={pdfDialogOpen}
         onOpenChange={setPdfDialogOpen}
         pdfUrl={selectedPdfUrl}
-        title="DeepSeek OCR 技术报告"
-        description="了解 DeepSeek OCR 的技术架构和创新突破"
+        title="DeepSeek-OCR: Contexts Optical Compression"
+        description="Understand the technical architecture and innovative breakthroughs of DeepSeek OCR"
       />
 
       {/* OCR Demo Dialog */}

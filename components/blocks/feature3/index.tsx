@@ -49,7 +49,7 @@ export default function Feature3({ section }: { section: SectionType }) {
                         <p className="text-sm">{item.description}</p>
                       </div>
                     </div>
-                    {item.image && (
+                   {/* {item.image && (
                       <div className="mt-6 block border bg-muted/50 px-4 py-6 lg:hidden">
                         <div className="aspect-video">
                           <img
@@ -59,7 +59,7 @@ export default function Feature3({ section }: { section: SectionType }) {
                           />
                         </div>
                       </div>
-                    )}
+                    )}*/}
                   </TabsTrigger>
                 );
               })}
