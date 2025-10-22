@@ -18,14 +18,14 @@
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "定价",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "Github",
+          "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+          "icon": ""
         },
         {
-          "title": "案例展示",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "Hugging Face",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+          "icon": ""
         }
       ]
     },
