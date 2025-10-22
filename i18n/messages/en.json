@@ -137,6 +137,7 @@
     "loading": "Loading...",
     "fullscreen": "Fullscreen",
     "exit_fullscreen": "Exit Fullscreen",
-    "close": "Close"
+    "close": "Close",
+    "tip": "✨ No registration required · Desktop & Mobile supported"
   }
 }

@@ -11,12 +11,14 @@ import ZoomableImage from "@/components/ui/zoomable-image";
 import PdfPreviewDialog from "@/components/ui/pdf-preview-dialog";
 import OcrDemoDialog from "@/components/ui/ocr-demo-dialog";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Hero({ hero }: { hero: HeroType }) {
   const [pdfDialogOpen, setPdfDialogOpen] = useState(false);
   const [selectedPdfUrl, setSelectedPdfUrl] = useState("");
   const [ocrDemoOpen, setOcrDemoOpen] = useState(false);
   const [ocrDemoUrl, setOcrDemoUrl] = useState("");
+  const t = useTranslations("pdf_dialog");
 
   if (hero.disabled) {
     return null;
@@ -161,8 +163,8 @@ export default function Hero({ hero }: { hero: HeroType }) {
         open={pdfDialogOpen}
         onOpenChange={setPdfDialogOpen}
         pdfUrl={selectedPdfUrl}
-        title="DeepSeek-OCR: Contexts Optical Compression"
-        description="Understand the technical architecture and innovative breakthroughs of DeepSeek OCR"
+        title={t("title")}
+        description={t("description")}
       />
 
       {/* OCR Demo Dialog */}

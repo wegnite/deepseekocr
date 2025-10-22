@@ -6,10 +6,12 @@ import ZoomableImage from "@/components/ui/zoomable-image";
 import { Button } from "@/components/ui/button";
 import OcrDemoDialog from "@/components/ui/ocr-demo-dialog";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Experience({ section }: { section: SectionType }) {
   const [ocrDemoOpen, setOcrDemoOpen] = useState(false);
   const [ocrDemoUrl, setOcrDemoUrl] = useState("");
+  const t = useTranslations("ocr_demo");
 
   if (section.disabled) {
     return null;
@@ -101,7 +103,7 @@ export default function Experience({ section }: { section: SectionType }) {
                     return null;
                   })}
                   <p className="text-sm text-muted-foreground mt-2">
-                    ✨ 无需注册，立即体验 · 支持桌面端和移动端
+                    {t("tip")}
                   </p>
                 </div>
               )}
