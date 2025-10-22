@@ -24,6 +24,7 @@ export interface Button {
   size?: ButtonSize;
   className?: string;
   isPdfPreview?: boolean; // 标记为 PDF 预览按钮
+  isOcrDemo?: boolean; // 标记为 OCR 在线体验按钮
 }
 
 export interface Image {

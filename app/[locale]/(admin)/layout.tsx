@@ -67,19 +67,19 @@ export default async function AdminLayout({
       items: [
         {
           title: "Documents",
-          url: "https://docs.shipany.ai",
+          url: "https://docs.deepseekocr.site",
           target: "_blank",
           icon: "RiFileTextLine",
         },
         {
           title: "Blocks",
-          url: "https://shipany.ai/blocks",
+          url: "https://deepseekocr.site/blocks",
           target: "_blank",
           icon: "RiDashboardLine",
         },
         {
           title: "Showcases",
-          url: "https://shipany.ai/showcase",
+          url: "https://deepseekocr.site/showcase",
           target: "_blank",
           icon: "RiAppsLine",
         },

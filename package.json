@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "author": "idoubi",
-  "homepage": "https://shipany.ai",
+  "homepage": "https://deepseekocr.site",
   "scripts": {
     "dev": "cross-env NODE_NO_WARNINGS=1 next dev --turbopack",
     "build": "next build",

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "DeepSeek OCR - 10x Document Compression | 97% Accuracy Vision Language Model",
-    "description": "DeepSeek OCR compresses 1000-word documents into 100 visual tokens with 97% accuracy using a 3B vision language model. Break through LLM context limits, reduce API costs, and boost processing speed by 10x. Supports document recognition, chart parsing, and formula extraction.",
-    "keywords": "DeepSeek OCR, Vision Language Model, Token Compression, Document Recognition, OCR Technology, Chart Recognition, Formula Extraction, LLM Optimization, AI Document Processing, Open Source OCR"
+    "title": "DeepSeek OCR - Free Online Trial | 10x Compression 97% Accuracy",
+    "description": "Try DeepSeek OCR free online, no installation required. 3B vision model compresses 1000-word docs to 100 tokens with 97% accuracy. Break LLM limits, reduce API costs, boost speed 10x. Document recognition, chart parsing, formula extraction.",
+    "keywords": "DeepSeek OCR, Free Online OCR, Online Trial, Vision Language Model, Token Compression, Document Recognition, Chart Recognition, Formula Extraction, LLM Optimization, Open Source OCR"
   },
   "user": {
     "sign_in": "Sign In",
@@ -130,5 +130,13 @@
     "exit_fullscreen": "Exit Fullscreen",
     "close": "Close",
     "download": "Download PDF"
+  },
+  "ocr_demo": {
+    "title": "Try DeepSeek OCR Online",
+    "description": "Experience 10x compression visual text recognition instantly",
+    "loading": "Loading...",
+    "fullscreen": "Fullscreen",
+    "exit_fullscreen": "Exit Fullscreen",
+    "close": "Close"
   }
 }

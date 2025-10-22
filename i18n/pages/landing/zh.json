@@ -29,16 +29,7 @@
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "获取 DeepSeek OCR",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
-    ],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
@@ -54,11 +45,11 @@
     "tip": "⚡ GitHub 2000+ Stars | Hugging Face 官方模型",
     "buttons": [
       {
-        "title": "立即使用",
+        "title": "免费使用",
         "icon": "RiFlashlightFill",
-        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
-        "target": "_blank",
-        "variant": "default"
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
       },
       {
         "title": "查看文档",
@@ -173,6 +164,38 @@
         "image": {
           "src": "/imgs/features/8.png"
         }
+      }
+    ]
+  },
+  "experience": {
+    "name": "experience",
+    "title": "免费在线体验 DeepSeek OCR",
+    "label": "在线体验",
+    "description": "无需安装，立即在浏览器中体验 10 倍压缩的视觉文本识别能力",
+    "image": {
+      "src": "/imgs/features/demo-preview.png"
+    },
+    "buttons": [
+      {
+        "title": "立即体验",
+        "icon": "RiPlayCircleLine",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
+      },
+      {
+        "title": "GitHub 仓库",
+        "icon": "RiGithubLine",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "Hugging Face",
+        "icon": "RiRobot2Line",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
       }
     ]
   },
@@ -329,20 +352,20 @@
   "cta": {
     "name": "cta",
     "title": "立即开始使用 DeepSeek OCR",
-    "description": "从这里开始,体验10倍文档压缩和97%准确率。",
+    "description": "免费在线体验 10 倍文档压缩和 97% 准确率",
     "buttons": [
+      {
+        "title": "免费使用",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "icon": "RiFlashlightLine",
+        "isOcrDemo": true
+      },
       {
         "title": "GitHub 仓库",
         "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
         "target": "_blank",
-        "icon": "RiGithubLine"
-      },
-      {
-        "title": "Hugging Face 模型",
-        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
-        "target": "_blank",
         "variant": "outline",
-        "icon": "GoArrowUpRight"
+        "icon": "RiGithubLine"
       }
     ]
   },

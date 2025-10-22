@@ -32,7 +32,7 @@
     "buttons": [
       {
         "title": "Get DeepSeek OCR",
-        "url": "https://shipany.ai",
+        "url": "https://deepseekocr.site",
         "target": "_blank",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
@@ -54,11 +54,11 @@
     "tip": "⚡ GitHub 2000+ Stars | Official Hugging Face Model",
     "buttons": [
       {
-        "title": "Get Started",
+        "title": "Try for Free",
         "icon": "RiFlashlightFill",
-        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
-        "target": "_blank",
-        "variant": "default"
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
       },
       {
         "title": "View Docs",
@@ -216,6 +216,38 @@
       }
     ]
   },
+  "experience": {
+    "name": "experience",
+    "title": "Try DeepSeek OCR Online for Free",
+    "label": "Online Demo",
+    "description": "No installation required. Experience 10x compression visual text recognition in your browser instantly",
+    "image": {
+      "src": "/imgs/features/demo-preview.png"
+    },
+    "buttons": [
+      {
+        "title": "Try Now",
+        "icon": "RiPlayCircleLine",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
+      },
+      {
+        "title": "GitHub Repository",
+        "icon": "RiGithubLine",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "Hugging Face",
+        "icon": "RiRobot2Line",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
   "feature": {
     "name": "feature",
     "title": "Key Features of DeepSeek OCR",
@@ -368,20 +400,21 @@
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with DeepSeek OCR.",
+    "title": "Start Using DeepSeek OCR Today",
+    "description": "Try free online. Experience 10x compression and 97% accuracy",
     "buttons": [
       {
-        "title": "Get DeepSeek OCR",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "Try for Free",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "icon": "RiFlashlightLine",
+        "isOcrDemo": true
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
+        "title": "GitHub Repository",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
         "target": "_blank",
-        "variant": "outline"
+        "variant": "outline",
+        "icon": "RiGithubLine"
       }
     ]
   },
@@ -424,17 +457,17 @@
           "children": [
             {
               "title": "Documents",
-              "url": "https://docs.shipany.ai",
+              "url": "https://docs.deepseekocr.site",
               "target": "_blank"
             },
             {
               "title": "Components",
-              "url": "https://shipany.ai/components",
+              "url": "https://deepseekocr.site/components",
               "target": "_blank"
             },
             {
               "title": "Templates",
-              "url": "https://shipany.ai/templates",
+              "url": "https://deepseekocr.site/templates",
               "target": "_blank"
             }
           ]
@@ -484,7 +517,7 @@
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
+          "url": "mailto:support@deepseekocr.site",
           "target": "_self"
         }
       ]

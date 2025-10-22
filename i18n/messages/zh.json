@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "DeepSeek OCR - 10倍文档压缩 | 97%准确率视觉语言模型",
-    "description": "DeepSeek OCR 基于 3B 视觉语言模型，将千字文档压缩为 100 个视觉 Token，准确率达 97%。突破 LLM 上下文限制，降低 API 成本，提升 10 倍处理速度。支持文档识别、图表解析、公式提取。",
-    "keywords": "DeepSeek OCR, 视觉语言模型, Token压缩, 文档识别, OCR技术, 图表识别, 公式提取, LLM优化, AI文档处理, 开源OCR"
+    "title": "DeepSeek OCR - 免费在线体验 | 10倍压缩97%准确率",
+    "description": "DeepSeek OCR 免费在线体验，立即使用无需安装。基于3B视觉模型，千字文档压缩为100 Token，准确率97%。突破LLM限制，降低API成本，提升10倍速度。支持文档识别、图表解析、公式提取。",
+    "keywords": "DeepSeek OCR, 免费在线OCR, 在线体验, 视觉语言模型, Token压缩, 文档识别, 图表识别, 公式提取, LLM优化, 开源OCR"
   },
   "user": {
     "sign_in": "登录",
@@ -130,5 +130,13 @@
     "exit_fullscreen": "退出全屏",
     "close": "关闭",
     "download": "下载 PDF"
+  },
+  "ocr_demo": {
+    "title": "在线体验 DeepSeek OCR",
+    "description": "立即体验 10 倍压缩的视觉文本识别能力",
+    "loading": "加载中...",
+    "fullscreen": "全屏",
+    "exit_fullscreen": "退出全屏",
+    "close": "关闭"
   }
 }

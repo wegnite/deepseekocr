@@ -9,11 +9,14 @@ import Icon from "@/components/icon";
 import { Link } from "@/i18n/routing";
 import ZoomableImage from "@/components/ui/zoomable-image";
 import PdfPreviewDialog from "@/components/ui/pdf-preview-dialog";
+import OcrDemoDialog from "@/components/ui/ocr-demo-dialog";
 import { useState } from "react";
 
 export default function Hero({ hero }: { hero: HeroType }) {
   const [pdfDialogOpen, setPdfDialogOpen] = useState(false);
   const [selectedPdfUrl, setSelectedPdfUrl] = useState("");
+  const [ocrDemoOpen, setOcrDemoOpen] = useState(false);
+  const [ocrDemoUrl, setOcrDemoUrl] = useState("");
 
   if (hero.disabled) {
     return null;
@@ -28,6 +31,11 @@ export default function Hero({ hero }: { hero: HeroType }) {
   const handlePdfPreviewClick = (url: string) => {
     setSelectedPdfUrl(url);
     setPdfDialogOpen(true);
+  };
+
+  const handleOcrDemoClick = (url: string) => {
+    setOcrDemoUrl(url);
+    setOcrDemoOpen(true);
   };
 
   return (
@@ -94,6 +102,22 @@ export default function Hero({ hero }: { hero: HeroType }) {
                     );
                   }
 
+                  // 如果是 OCR Demo 按钮
+                  if (item.isOcrDemo && item.url) {
+                    return (
+                      <Button
+                        key={i}
+                        className="w-full sm:w-auto"
+                        size="lg"
+                        variant={item.variant || "default"}
+                        onClick={() => handleOcrDemoClick(item.url!)}
+                      >
+                        {item.icon && <Icon name={item.icon} className="" />}
+                        {item.title}
+                      </Button>
+                    );
+                  }
+
                   // 普通按钮
                   return (
                     <Link
@@ -139,6 +163,13 @@ export default function Hero({ hero }: { hero: HeroType }) {
         pdfUrl={selectedPdfUrl}
         title="DeepSeek OCR 技术报告"
         description="了解 DeepSeek OCR 的技术架构和创新突破"
+      />
+
+      {/* OCR Demo Dialog */}
+      <OcrDemoDialog
+        open={ocrDemoOpen}
+        onOpenChange={setOcrDemoOpen}
+        demoUrl={ocrDemoUrl}
       />
     </>
   );

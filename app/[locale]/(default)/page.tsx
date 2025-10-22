@@ -10,6 +10,7 @@ import Pricing from "@/components/blocks/pricing";
 import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
+import Experience from "@/components/blocks/experience";
 import { getLandingPage } from "@/services/page";
 
 export async function generateMetadata({
@@ -46,6 +47,7 @@ export default async function LandingPage({
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}
       {page.usage && <Feature3 section={page.usage} />}
+      {page.experience && <Experience section={page.experience} />}
       {page.feature && <Feature section={page.feature} />}
       {page.showcase && <Showcase section={page.showcase} />}
       {page.stats && <Stats section={page.stats} />}
