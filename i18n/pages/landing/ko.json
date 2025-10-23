@@ -1,0 +1,529 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "DeepSeek OCR",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "DeepSeek OCR"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "기능",
+          "url": "/#feature",
+          "icon": "RiSparkling2Line"
+        },
+        {
+          "title": "Github",
+          "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+          "icon": ""
+        },
+        {
+          "title": "Hugging Face",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+          "icon": ""
+        }
+      ]
+    },
+    "show_sign": false,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "10배 문서 압축, 97% 정확도 - DeepSeek OCR 혁명",
+    "highlight_text": "10배 압축",
+    "description": "DeepSeek OCR은 1000단어 문서를 100개의 비전 토큰으로 97% 정확도로 압축합니다.<br/>LLM 컨텍스트 한계 돌파, API 비용 절감, 처리 속도 10배 향상.",
+    "announcement": {
+      "label": "오픈소스",
+      "title": "🚀 2025년 10월 최신 릴리스",
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR"
+    },
+    "tip": "⚡ GitHub 2000+ 스타 | 공식 Hugging Face 모델",
+    "buttons": [
+      {
+        "title": "무료로 체험하기",
+        "icon": "RiFlashlightFill",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
+      },
+      {
+        "title": "문서 보기",
+        "icon": "RiBookLine",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "📄 기술 논문",
+        "icon": "RiFileTextLine",
+        "url": "/DeepSeek_OCR_paper.pdf",
+        "variant": "outline",
+        "isPdfPreview": true
+      }
+    ],
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "DeepSeek OCR은 거인의 어깨 위에 세워졌습니다",
+    "items": [
+      {
+        "title": "Next.js",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Next.js"
+        }
+      },
+      {
+        "title": "React",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "React"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "TailwindCSS"
+        }
+      },
+      {
+        "title": "Shadcn/UI",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Shadcn/UI"
+        }
+      },
+      {
+        "title": "Vercel",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Vercel"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "DeepSeek OCR이란 무엇인가요",
+    "label": "소개",
+    "description": "DeepSeek OCR은 AI SaaS 스타트업 구축을 위한 NextJS 보일러플레이트입니다. 다양한 템플릿과 컴포넌트가 내장되어 있습니다.",
+    "image": {
+      "src": "/imgs/features/show1.jpg"
+    },
+    "items": [
+      {
+        "title": "즉시 사용 가능한 템플릿",
+        "description": "수십 개의 프로덕션 준비된 AI SaaS 템플릿 중에서 선택하여 프로젝트를 빠르게 시작하세요.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "인프라 설정",
+        "description": "모범 사례가 내장된 확장 가능한 인프라에 즉시 액세스하세요.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "빠른 배포",
+        "description": "AI SaaS 애플리케이션을 며칠이 아닌 몇 시간 만에 프로덕션에 배포하세요.",
+        "icon": "RiCloudyFill"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "DeepSeek OCR을 선택해야 하는 이유",
+    "label": "장점",
+    "description": "AI 스타트업을 시작하는 데 필요한 모든 것을 얻으세요 - 즉시 사용 가능한 템플릿부터 기술 지원까지.",
+    "items": [
+      {
+        "title": "완전한 프레임워크",
+        "description": "인증, 결제 및 AI 통합이 포함된 Next.js 기반 - 모든 것이 즉시 작동합니다.",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/show2.jpg"
+        }
+      },
+      {
+        "title": "풍부한 템플릿 라이브러리",
+        "description": "다양한 AI SaaS 템플릿 중에서 선택하여 프로젝트를 시작하세요 - 챗봇, 이미지 생성 등.",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/show3.jpg"
+        }
+      },
+      {
+        "title": "기술 가이드",
+        "description": "전담 지원을 받고 개발자 커뮤니티에 가입하여 성공적인 출시를 보장하세요.",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/show4.jpg"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "DeepSeek OCR로 출시하는 방법",
+    "description": "세 가지 간단한 단계로 AI SaaS 스타트업을 시작하세요:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "DeepSeek OCR 받기",
+        "description": "일회성 결제로 DeepSeek OCR을 구매하세요. 이메일에서 코드와 문서를 확인하세요.",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "프로젝트 시작",
+        "description": "문서를 읽고 DeepSeek OCR의 코드를 복제하세요. AI SaaS 스타트업 구축을 시작하세요.",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "프로젝트 커스터마이징",
+        "description": "데이터와 콘텐츠로 템플릿을 수정하세요. 특정 AI 기능 요구사항에 맞춰 조정하세요.",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "프로덕션에 배포",
+        "description": "몇 가지 단계로 프로젝트를 프로덕션에 배포하고 즉시 고객에게 서비스를 제공하세요.",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "name": "experience",
+    "title": "DeepSeek OCR을 무료로 온라인에서 체험하세요",
+    "label": "온라인 데모",
+    "description": "설치가 필요 없습니다. 브라우저에서 즉시 10배 압축 비전 텍스트 인식을 경험하세요",
+    "image": {
+      "src": "/imgs/features/demo-preview.png"
+    },
+    "buttons": [
+      {
+        "title": "지금 무료 체험",
+        "icon": "RiPlayCircleLine",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
+      },
+      {
+        "title": "GitHub 저장소",
+        "icon": "RiGithubLine",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "Hugging Face",
+        "icon": "RiRobot2Line",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "DeepSeek OCR의 주요 기능",
+    "description": "AI SaaS 스타트업을 빠르고 효율적으로 시작하는 데 필요한 모든 것.",
+    "items": [
+      {
+        "title": "Next.js 보일러플레이트",
+        "description": "SEO 친화적인 구조와 i18n 지원이 포함된 프로덕션 준비 Next.js 템플릿.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "인증 및 결제",
+        "description": "Google OAuth 통합, 원탭 로그인 및 Stripe 결제 처리.",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "데이터 인프라",
+        "description": "안정적이고 확장 가능한 데이터 저장을 위한 Supabase 통합 내장.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "원클릭 배포",
+        "description": "자동화된 설정으로 Vercel 또는 Cloudflare에 원활하게 배포.",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "비즈니스 분석",
+        "description": "성장 추적을 위한 Google Analytics 및 Search Console 통합.",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "AI 준비 인프라",
+        "description": "내장된 크레딧 시스템 및 API 판매가 포함된 사전 구성된 AI 통합.",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "통계",
+    "title": "사람들이 DeepSeek OCR을 사랑합니다",
+    "description": "사용하기 쉽고 빠르게 출시할 수 있기 때문입니다.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "신뢰받는",
+        "label": "99+",
+        "description": "고객"
+      },
+      {
+        "title": "내장된",
+        "label": "20+",
+        "description": "컴포넌트"
+      },
+      {
+        "title": "빠른 출시",
+        "label": "5",
+        "description": "분 내"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "후기",
+    "title": "사용자들이 DeepSeek OCR에 대해 말하는 것",
+    "description": "DeepSeek OCR로 AI 스타트업을 시작한 개발자와 창업자의 이야기를 들어보세요.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "David Chen",
+        "label": "AIWallpaper.shop 창업자",
+        "description": "DeepSeek OCR 덕분에 수개월의 개발 시간을 절약했습니다. 단 2일 만에 AI 배경화면 비즈니스를 시작했고 일주일 만에 첫 유료 고객을 확보했습니다!",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Rachel Kim",
+        "label": "HeyBeauty.ai CTO",
+        "description": "사전 구축된 AI 인프라는 게임 체인저입니다. 아키텍처에 대해 걱정할 필요 없이 AI 뷰티 기술에만 집중하고 빠르게 출시했습니다.",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Marcus Thompson",
+        "label": "개인 개발자",
+        "description": "개인 개발자로서 DeepSeek OCR은 인증, 결제, AI 통합 및 아름다운 UI 등 필요한 모든 것을 제공했습니다. 주말에 SaaS를 출시했습니다!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "Sofia Garcia",
+        "label": "Melodisco CEO",
+        "description": "템플릿은 프로덕션 준비가 되어 있고 고도로 커스터마이징 가능합니다. 수개월이 아닌 몇 시간 만에 AI 음악 플랫폼을 구축했습니다. 놀라운 출시 속도입니다!",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "James Wilson",
+        "label": "GPTs.works 기술 리드",
+        "description": "DeepSeek OCR의 인프라는 견고합니다. 백엔드를 건드리지 않고 0명에서 1만 명의 사용자로 확장했습니다. AI 스타트업에 최고의 투자입니다.",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "Anna Zhang",
+        "label": "스타트업 창업자",
+        "description": "아이디어에서 출시까지 3일! DeepSeek OCR의 템플릿과 배포 도구 덕분에 AI 비즈니스 컨셉을 엄청나게 빠르게 테스트할 수 있었습니다.",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "DeepSeek OCR에 대한 자주 묻는 질문",
+    "description": "다른 질문이 있으신가요? Discord 또는 이메일로 문의하세요.",
+    "items": [
+      {
+        "title": "DeepSeek OCR은 정확히 무엇이며 어떻게 작동하나요?",
+        "description": "DeepSeek OCR은 AI SaaS 스타트업 구축을 위해 특별히 설계된 포괄적인 NextJS 보일러플레이트입니다. 며칠이 아닌 몇 시간 만에 AI 비즈니스를 시작할 수 있도록 즉시 사용 가능한 템플릿, 인프라 설정 및 배포 도구를 제공합니다."
+      },
+      {
+        "title": "DeepSeek OCR을 사용하려면 고급 기술이 필요한가요?",
+        "description": "기본적인 프로그래밍 지식이 도움이 되지만, DeepSeek OCR은 개발자 친화적으로 설계되었습니다. 템플릿과 문서를 통해 AI 또는 클라우드 인프라 전문가가 아니어도 쉽게 시작할 수 있습니다."
+      },
+      {
+        "title": "DeepSeek OCR로 어떤 유형의 AI SaaS를 구축할 수 있나요?",
+        "description": "DeepSeek OCR은 콘텐츠 생성부터 데이터 분석 도구까지 광범위한 AI 애플리케이션을 지원합니다. 템플릿은 AI 챗봇, 콘텐츠 생성기, 이미지 처리 앱 등 인기 있는 사용 사례를 다룹니다."
+      },
+      {
+        "title": "DeepSeek OCR로 출시하는 데 일반적으로 얼마나 걸리나요?",
+        "description": "DeepSeek OCR을 사용하면 몇 시간 만에 작동하는 프로토타입을, 몇 시간 만에 프로덕션 준비 애플리케이션을 만들 수 있습니다. 원클릭 배포 및 사전 구성된 인프라는 기존의 수개월 걸리는 개발 주기를 크게 단축합니다."
+      },
+      {
+        "title": "DeepSeek OCR 인프라에는 무엇이 포함되나요?",
+        "description": "DeepSeek OCR은 인증, 데이터베이스 설정, API 통합, 결제 처리 및 확장 가능한 클라우드 배포를 포함한 완전한 인프라 스택을 제공합니다. 모든 것이 업계 모범 사례에 따라 사전 구성되어 있습니다."
+      },
+      {
+        "title": "템플릿을 브랜드에 맞게 커스터마이징할 수 있나요?",
+        "description": "물론입니다! 모든 DeepSeek OCR 템플릿은 완전히 커스터마이징 가능합니다. 견고한 기본 인프라를 유지하면서 브랜드 아이덴티티와 특정 비즈니스 요구 사항에 맞게 디자인, 기능 및 기능을 수정할 수 있습니다."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "오늘 DeepSeek OCR 사용 시작하기",
+    "description": "무료로 온라인 체험. 10배 압축과 97% 정확도를 경험하세요",
+    "buttons": [
+      {
+        "title": "무료로 체험하기",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "icon": "RiFlashlightLine",
+        "isOcrDemo": true
+      },
+      {
+        "title": "GitHub 저장소",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline",
+        "icon": "RiGithubLine"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "DeepSeek OCR",
+      "description": "DeepSeek OCR은 AI SaaS 스타트업 구축을 위한 NextJS 보일러플레이트입니다. 다양한 템플릿과 컴포넌트로 빠르게 출시하세요.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "DeepSeek OCR"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • DeepSeek OCR 모든 권리 보유.",
+    "nav": {
+      "items": [
+        {
+          "title": "소개",
+          "children": [
+            {
+              "title": "기능",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "쇼케이스",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "가격",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "리소스",
+          "children": [
+            {
+              "title": "문서",
+              "url": "https://docs.deepseekocr.site",
+              "target": "_blank"
+            },
+            {
+              "title": "컴포넌트",
+              "url": "https://deepseekocr.site/components",
+              "target": "_blank"
+            },
+            {
+              "title": "템플릿",
+              "url": "https://deepseekocr.site/templates",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "파트너",
+          "children": [
+            {
+              "title": "ThinkAny",
+              "url": "https://thinkany.ai",
+              "target": "_blank"
+            },
+            {
+              "title": "HeyBeauty",
+              "url": "https://heybeauty.ai",
+              "target": "_blank"
+            },
+            {
+              "title": "Pagen",
+              "url": "https://pagen.so",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/shipanyai",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/shipanyai",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/HQNnrzjZQS",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@deepseekocr.site",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "개인정보 보호정책",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "서비스 약관",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

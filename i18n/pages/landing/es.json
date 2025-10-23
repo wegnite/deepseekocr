@@ -1,0 +1,529 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "DeepSeek OCR",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "DeepSeek OCR"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Características",
+          "url": "/#feature",
+          "icon": "RiSparkling2Line"
+        },
+        {
+          "title": "Github",
+          "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+          "icon": ""
+        },
+        {
+          "title": "Hugging Face",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+          "icon": ""
+        }
+      ]
+    },
+    "show_sign": false,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Compresión de Documentos 10x, 97% de Precisión - Revolución DeepSeek OCR",
+    "highlight_text": "Compresión 10x",
+    "description": "DeepSeek OCR comprime documentos de 1000 palabras en 100 tokens visuales con 97% de precisión.<br/>Supera los límites de contexto de LLM, reduce costos de API y aumenta la velocidad de procesamiento 10 veces.",
+    "announcement": {
+      "label": "Código Abierto",
+      "title": "🚀 Último Lanzamiento Octubre 2025",
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR"
+    },
+    "tip": "⚡ GitHub 2000+ Estrellas | Modelo Oficial de Hugging Face",
+    "buttons": [
+      {
+        "title": "Prueba Gratuita",
+        "icon": "RiFlashlightFill",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
+      },
+      {
+        "title": "Ver Documentación",
+        "icon": "RiBookLine",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "📄 Artículo Técnico",
+        "icon": "RiFileTextLine",
+        "url": "/DeepSeek_OCR_paper.pdf",
+        "variant": "outline",
+        "isPdfPreview": true
+      }
+    ],
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "DeepSeek OCR está construido sobre los hombros de gigantes",
+    "items": [
+      {
+        "title": "Next.js",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Next.js"
+        }
+      },
+      {
+        "title": "React",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "React"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "TailwindCSS"
+        }
+      },
+      {
+        "title": "Shadcn/UI",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Shadcn/UI"
+        }
+      },
+      {
+        "title": "Vercel",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Vercel"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "¿Qué es DeepSeek OCR?",
+    "label": "Introducción",
+    "description": "DeepSeek OCR es un boilerplate de NextJS para construir startups de SaaS de IA. Construido con una variedad de plantillas y componentes.",
+    "image": {
+      "src": "/imgs/features/show1.jpg"
+    },
+    "items": [
+      {
+        "title": "Plantillas Listas para Usar",
+        "description": "Elige entre docenas de plantillas de SaaS de IA listas para producción para iniciar rápidamente tu proyecto.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "Configuración de Infraestructura",
+        "description": "Obtén acceso instantáneo a infraestructura escalable con mejores prácticas integradas.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "Despliegue Rápido",
+        "description": "Despliega tu aplicación SaaS de IA a producción en horas, no en días.",
+        "icon": "RiCloudyFill"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Por Qué Elegir DeepSeek OCR",
+    "label": "Beneficios",
+    "description": "Obtén todo lo que necesitas para lanzar tu startup de IA - desde plantillas listas para usar hasta soporte técnico.",
+    "items": [
+      {
+        "title": "Marco Completo",
+        "description": "Construido sobre Next.js con autenticación, pagos e integración de IA - todo funciona desde el primer momento.",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/show2.jpg"
+        }
+      },
+      {
+        "title": "Biblioteca Rica en Plantillas",
+        "description": "Elige entre varias plantillas de SaaS de IA para impulsar tu proyecto - chatbots, generación de imágenes y más.",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/show3.jpg"
+        }
+      },
+      {
+        "title": "Orientación Técnica",
+        "description": "Obtén soporte dedicado y únete a nuestra comunidad de desarrolladores para asegurar tu lanzamiento exitoso.",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/show4.jpg"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo Lanzar con DeepSeek OCR",
+    "description": "Pon en marcha tu startup SaaS de IA en tres simples pasos:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Obtén DeepSeek OCR",
+        "description": "Compra DeepSeek OCR con un pago único. Revisa tu correo electrónico para el código y la documentación.",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "Inicia Tu Proyecto",
+        "description": "Lee la documentación y clona el código de DeepSeek OCR. Comienza a construir tu startup SaaS de IA.",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "Personaliza Tu Proyecto",
+        "description": "Modifica la plantilla con tus datos y contenidos. Necesidades específicas de funcionalidad de IA.",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "Despliega a Producción",
+        "description": "Despliega tu proyecto a producción con unos pocos pasos y comienza a servir a los clientes de inmediato.",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "name": "experience",
+    "title": "Prueba DeepSeek OCR en Línea Gratis",
+    "label": "Demo en Línea",
+    "description": "No se requiere instalación. Experimenta el reconocimiento de texto visual con compresión 10x en tu navegador al instante",
+    "image": {
+      "src": "/imgs/features/demo-preview.png"
+    },
+    "buttons": [
+      {
+        "title": "Prueba Gratis Ahora",
+        "icon": "RiPlayCircleLine",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "variant": "default",
+        "isOcrDemo": true
+      },
+      {
+        "title": "Repositorio GitHub",
+        "icon": "RiGithubLine",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      },
+      {
+        "title": "Hugging Face",
+        "icon": "RiRobot2Line",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Características Clave de DeepSeek OCR",
+    "description": "Todo lo que necesitas para lanzar tu startup SaaS de IA de manera rápida y eficiente.",
+    "items": [
+      {
+        "title": "Boilerplate Next.js",
+        "description": "Plantillas Next.js listas para producción con estructura amigable para SEO y soporte i18n.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "Autenticación y Pagos",
+        "description": "Google OAuth integrado, inicio de sesión con un toque y procesamiento de pagos con Stripe.",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "Infraestructura de Datos",
+        "description": "Integración Supabase incorporada para almacenamiento de datos confiable y escalable.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "Despliegue con Un Clic",
+        "description": "Despliegue sin problemas a Vercel o Cloudflare con configuración automatizada.",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "Análisis de Negocio",
+        "description": "Google Analytics y Search Console integrados para seguimiento del crecimiento.",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "Infraestructura Lista para IA",
+        "description": "Integración de IA preconfigurada con sistema de créditos incorporado y ventas de API.",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "Estadísticas",
+    "title": "La Gente Ama DeepSeek OCR",
+    "description": "por su facilidad de uso y rapidez de lanzamiento.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Confiado por",
+        "label": "99+",
+        "description": "Clientes"
+      },
+      {
+        "title": "Incorporado en",
+        "label": "20+",
+        "description": "Componentes"
+      },
+      {
+        "title": "Lanza Rápido en",
+        "label": "5",
+        "description": "Minutos"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Testimonios",
+    "title": "Lo Que Dicen los Usuarios Sobre DeepSeek OCR",
+    "description": "Escucha de desarrolladores y fundadores que lanzaron sus startups de IA con DeepSeek OCR.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "David Chen",
+        "label": "Fundador de AIWallpaper.shop",
+        "description": "DeepSeek OCR nos ahorró meses de tiempo de desarrollo. ¡Lanzamos nuestro negocio de fondos de pantalla con IA en solo 2 días y conseguimos nuestro primer cliente de pago en una semana!",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Rachel Kim",
+        "label": "CTO en HeyBeauty.ai",
+        "description": "La infraestructura de IA preconstruida es un cambio de juego. No tuvimos que preocuparnos por la arquitectura - solo nos enfocamos en nuestra tecnología de belleza con IA y nos lanzamos rápido.",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Marcus Thompson",
+        "label": "Desarrollador Independiente",
+        "description": "Como desarrollador independiente, DeepSeek OCR me dio todo lo que necesitaba - autenticación, pagos, integración de IA y hermosa UI. ¡Lancé mi SaaS en un fin de semana!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "Sofia Garcia",
+        "label": "CEO de Melodisco",
+        "description": "Las plantillas están listas para producción y son altamente personalizables. Construimos nuestra plataforma de música con IA en horas en lugar de meses. ¡Increíble tiempo de comercialización!",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "James Wilson",
+        "label": "Tech Lead en GPTs.works",
+        "description": "La infraestructura de DeepSeek OCR es sólida como una roca. Escalamos de 0 a 10k usuarios sin tocar el backend. Mejor inversión para nuestra startup de IA.",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "Anna Zhang",
+        "label": "Fundadora de Startup",
+        "description": "¡De la idea al lanzamiento en 3 días! Las plantillas y herramientas de despliegue de DeepSeek OCR hicieron posible probar nuestro concepto de negocio de IA increíblemente rápido.",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Preguntas Frecuentes Sobre DeepSeek OCR",
+    "description": "¿Tienes otra pregunta? Contáctanos en Discord o por correo electrónico.",
+    "items": [
+      {
+        "title": "¿Qué es exactamente DeepSeek OCR y cómo funciona?",
+        "description": "DeepSeek OCR es un boilerplate completo de NextJS diseñado específicamente para construir startups de SaaS de IA. Proporciona plantillas listas para usar, configuración de infraestructura y herramientas de despliegue que te ayudan a lanzar tu negocio de IA en horas en lugar de días."
+      },
+      {
+        "title": "¿Necesito habilidades técnicas avanzadas para usar DeepSeek OCR?",
+        "description": "Si bien el conocimiento básico de programación es útil, DeepSeek OCR está diseñado para ser amigable para desarrolladores. Nuestras plantillas y documentación facilitan el inicio, incluso si no eres un experto en IA o infraestructura en la nube."
+      },
+      {
+        "title": "¿Qué tipos de SaaS de IA puedo construir con DeepSeek OCR?",
+        "description": "DeepSeek OCR admite una amplia gama de aplicaciones de IA, desde generación de contenido hasta herramientas de análisis de datos. Nuestras plantillas cubren casos de uso populares como chatbots de IA, generadores de contenido, aplicaciones de procesamiento de imágenes y más."
+      },
+      {
+        "title": "¿Cuánto tiempo suele llevar lanzar con DeepSeek OCR?",
+        "description": "Con DeepSeek OCR, puedes tener un prototipo funcional en horas y una aplicación lista para producción en horas. Nuestro despliegue con un clic e infraestructura preconfigurada reducen significativamente el ciclo de desarrollo tradicional de meses."
+      },
+      {
+        "title": "¿Qué está incluido en la infraestructura de DeepSeek OCR?",
+        "description": "DeepSeek OCR proporciona un stack de infraestructura completo que incluye autenticación, configuración de base de datos, integración de API, procesamiento de pagos y despliegue en la nube escalable. Todo está preconfigurado siguiendo las mejores prácticas de la industria."
+      },
+      {
+        "title": "¿Puedo personalizar las plantillas para que coincidan con mi marca?",
+        "description": "¡Absolutamente! Todas las plantillas de DeepSeek OCR son completamente personalizables. Puedes modificar el diseño, las características y la funcionalidad para que coincidan con la identidad de tu marca y los requisitos comerciales específicos mientras mantienes la infraestructura subyacente robusta."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Comienza a Usar DeepSeek OCR Hoy",
+    "description": "Prueba gratis en línea. Experimenta compresión 10x y 97% de precisión",
+    "buttons": [
+      {
+        "title": "Prueba Gratuita",
+        "url": "https://axiilay-deepseek-ocr-demo.hf.space/",
+        "icon": "RiFlashlightLine",
+        "isOcrDemo": true
+      },
+      {
+        "title": "Repositorio GitHub",
+        "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "target": "_blank",
+        "variant": "outline",
+        "icon": "RiGithubLine"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "DeepSeek OCR",
+      "description": "DeepSeek OCR es un boilerplate de NextJS para construir startups de SaaS de IA. Lanza Rápido con una variedad de plantillas y componentes.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "DeepSeek OCR"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • DeepSeek OCR Todos los derechos reservados.",
+    "nav": {
+      "items": [
+        {
+          "title": "Acerca de",
+          "children": [
+            {
+              "title": "Características",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "Casos de Éxito",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Precios",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Recursos",
+          "children": [
+            {
+              "title": "Documentos",
+              "url": "https://docs.deepseekocr.site",
+              "target": "_blank"
+            },
+            {
+              "title": "Componentes",
+              "url": "https://deepseekocr.site/components",
+              "target": "_blank"
+            },
+            {
+              "title": "Plantillas",
+              "url": "https://deepseekocr.site/templates",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "Socios",
+          "children": [
+            {
+              "title": "ThinkAny",
+              "url": "https://thinkany.ai",
+              "target": "_blank"
+            },
+            {
+              "title": "HeyBeauty",
+              "url": "https://heybeauty.ai",
+              "target": "_blank"
+            },
+            {
+              "title": "Pagen",
+              "url": "https://pagen.so",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/shipanyai",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/shipanyai",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/HQNnrzjZQS",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@deepseekocr.site",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Política de Privacidad",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Términos de Servicio",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}
