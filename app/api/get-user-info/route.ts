@@ -4,6 +4,8 @@ import { findUserByUuid } from "@/models/user";
 import { getUserUuid } from "@/services/user";
 import { getUserCredits } from "@/services/credit";
 
+export const runtime = "edge";
+
 export async function POST(req: Request) {
   try {
     const user_uuid = await getUserUuid();

@@ -2,6 +2,8 @@ import Stripe from "stripe";
 import { handleOrderSession } from "@/services/order";
 import { respOk } from "@/lib/resp";
 
+export const runtime = "edge";
+
 export async function POST(req: Request) {
   try {
     const stripePrivateKey = process.env.STRIPE_PRIVATE_KEY;
@@ -11,7 +13,9 @@ export async function POST(req: Request) {
       throw new Error("invalid stripe config");
     }
 
-    const stripe = new Stripe(stripePrivateKey);
+    const stripe = new Stripe(stripePrivateKey, {
+      httpClient: Stripe.createFetchHttpClient(),
+    });
 
     const sign = req.headers.get("stripe-signature") as string;
     const body = await req.text();

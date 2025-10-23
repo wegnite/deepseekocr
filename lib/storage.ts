@@ -1,5 +1,4 @@
-import { S3Client } from "@aws-sdk/client-s3";
-import { Upload } from "@aws-sdk/lib-storage";
+import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
 interface StorageConfig {
   endpoint: string;
@@ -14,10 +13,13 @@ export function newStorage(config?: StorageConfig) {
 
 export class Storage {
   private s3: S3Client;
+  private endpoint: string;
 
   constructor(config?: StorageConfig) {
+    const endpoint = config?.endpoint || process.env.STORAGE_ENDPOINT || "";
+    this.endpoint = endpoint;
     this.s3 = new S3Client({
-      endpoint: config?.endpoint || process.env.STORAGE_ENDPOINT || "",
+      endpoint: endpoint || undefined,
       region: config?.region || process.env.STORAGE_REGION || "auto",
       credentials: {
         accessKeyId: config?.accessKey || process.env.STORAGE_ACCESS_KEY || "",
@@ -32,14 +34,12 @@ export class Storage {
     key,
     contentType,
     bucket,
-    onProgress,
     disposition = "inline",
   }: {
-    body: Buffer;
+    body: Uint8Array | ArrayBuffer | Blob | string;
     key: string;
     contentType?: string;
     bucket?: string;
-    onProgress?: (progress: number) => void;
     disposition?: "inline" | "attachment";
   }) {
     if (!bucket) {
@@ -50,35 +50,28 @@ export class Storage {
       throw new Error("Bucket is required");
     }
 
-    const upload = new Upload({
-      client: this.s3,
-      params: {
+    const normalizedBody =
+      body instanceof ArrayBuffer ? new Uint8Array(body) : body;
+
+    await this.s3.send(
+      new PutObjectCommand({
         Bucket: bucket,
         Key: key,
-        Body: body,
+        Body: normalizedBody,
         ContentDisposition: disposition,
         ...(contentType && { ContentType: contentType }),
-      },
-    });
+      })
+    );
 
-    if (onProgress) {
-      upload.on("httpUploadProgress", (progress) => {
-        const percentage =
-          ((progress.loaded || 0) / (progress.total || 1)) * 100;
-        onProgress(percentage);
-      });
-    }
-
-    const res = await upload.done();
+    const location = this.buildObjectUrl(bucket, key);
+    const url = this.buildPublicUrl(key, location);
 
     return {
-      location: res.Location,
-      bucket: res.Bucket,
-      key: res.Key,
-      filename: res.Key?.split("/").pop(),
-      url: process.env.STORAGE_DOMAIN
-        ? `${process.env.STORAGE_DOMAIN}/${res.Key}`
-        : res.Location,
+      location,
+      bucket,
+      key,
+      filename: key.split("/").pop(),
+      url,
     };
   }
 
@@ -105,14 +98,38 @@ export class Storage {
     }
 
     const arrayBuffer = await response.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
-
     return this.uploadFile({
-      body: buffer,
+      body: arrayBuffer,
       key,
       bucket,
       contentType,
       disposition,
     });
   }
+
+  private buildObjectUrl(bucket: string, key: string) {
+    if (process.env.STORAGE_DOMAIN) {
+      return joinUrl(process.env.STORAGE_DOMAIN, key);
+    }
+
+    if (this.endpoint) {
+      return joinUrl(this.endpoint, `${bucket}/${key}`);
+    }
+
+    return joinUrl(`https://${bucket}.s3.amazonaws.com`, key);
+  }
+
+  private buildPublicUrl(key: string, fallback: string) {
+    if (process.env.STORAGE_DOMAIN) {
+      return joinUrl(process.env.STORAGE_DOMAIN, key);
+    }
+
+    return fallback;
+  }
+}
+
+function joinUrl(base: string, path: string) {
+  const normalizedBase = base.replace(/\/$/, "");
+  const normalizedPath = path.replace(/^\//, "");
+  return `${normalizedBase}/${normalizedPath}`;
 }

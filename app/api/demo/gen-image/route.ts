@@ -8,6 +8,17 @@ import { newStorage } from "@/lib/storage";
 import { openai } from "@ai-sdk/openai";
 import { replicate } from "@ai-sdk/replicate";
 
+export const runtime = "edge";
+
+function decodeBase64Image(base64: string) {
+  const binary = atob(base64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+  return bytes;
+}
+
 export async function POST(req: Request) {
   try {
     const { prompt, provider, model } = await req.json();
@@ -66,7 +77,7 @@ export async function POST(req: Request) {
       images.map(async (image, index) => {
         const filename = `${provider}_image_${batch}_${index}.png`;
         const key = `shipany/${filename}`;
-        const body = Buffer.from(image.base64, "base64");
+        const body = decodeBase64Image(image.base64);
 
         try {
           const res = await storage.uploadFile({

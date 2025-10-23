@@ -9,6 +9,8 @@ import { getSnowId } from "@/lib/hash";
 import { getPricingPage } from "@/services/page";
 import { PricingItem } from "@/types/blocks/pricing";
 
+export const runtime = "edge";
+
 export async function POST(req: Request) {
   try {
     let {
@@ -124,7 +126,14 @@ export async function POST(req: Request) {
     };
     await insertOrder(order);
 
-    const stripe = new Stripe(process.env.STRIPE_PRIVATE_KEY || "");
+    const stripePrivateKey = process.env.STRIPE_PRIVATE_KEY;
+    if (!stripePrivateKey) {
+      return respErr("stripe not configured");
+    }
+
+    const stripe = new Stripe(stripePrivateKey, {
+      httpClient: Stripe.createFetchHttpClient(),
+    });
 
     let options: Stripe.Checkout.SessionCreateParams = {
       payment_method_types: ["card"],

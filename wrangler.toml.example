@@ -4,3 +4,5 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
 [vars]
+NEXT_PUBLIC_WEB_URL = "https://deepseekocr.site"
+NEXT_PUBLIC_PROJECT_NAME = "DeepSeek OCR"
